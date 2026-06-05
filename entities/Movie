@@ -1,0 +1,84 @@
+{
+  "name": "Movie",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "movie",
+        "series",
+        "special",
+        "animated",
+        "manga"
+      ]
+    },
+    "phase": {
+      "type": "number",
+      "enum": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    "chronological_order": {
+      "type": "number"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "synopsis": {
+      "type": "string"
+    },
+    "poster_url": {
+      "type": "string"
+    },
+    "backdrop_url": {
+      "type": "string"
+    },
+    "youtube_trailer_id": {
+      "type": "string"
+    },
+    "duration_minutes": {
+      "type": "number"
+    },
+    "imdb_rating": {
+      "type": "number"
+    },
+    "director": {
+      "type": "string"
+    },
+    "cast_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "universe": {
+      "type": "string"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "streaming_platform": {
+      "type": "string"
+    },
+    "is_featured": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "title",
+    "type",
+    "phase"
+  ]
+}

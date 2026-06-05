@@ -1,0 +1,65 @@
+{
+  "name": "Character",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "alias": {
+      "type": "string"
+    },
+    "alignment": {
+      "type": "string",
+      "enum": [
+        "hero",
+        "villain",
+        "anti-hero",
+        "neutral"
+      ]
+    },
+    "bio": {
+      "type": "string"
+    },
+    "powers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "affiliations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "first_appearance": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    },
+    "actor_id": {
+      "type": "string"
+    },
+    "movie_appearances": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "comic_series": {
+      "type": "string"
+    },
+    "universe": {
+      "type": "string",
+      "default": "Earth-616"
+    },
+    "is_featured": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "name",
+    "alignment"
+  ]
+}

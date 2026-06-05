@@ -1,0 +1,36 @@
+{
+  "name": "WatchlistItem",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "movie_id": {
+      "type": "string"
+    },
+    "movie_title": {
+      "type": "string"
+    },
+    "poster_url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "to_watch",
+        "watched"
+      ],
+      "default": "to_watch"
+    },
+    "added_date": {
+      "type": "string",
+      "format": "date"
+    }
+  },
+  "required": [
+    "user_id",
+    "movie_id",
+    "movie_title",
+    "status"
+  ]
+}

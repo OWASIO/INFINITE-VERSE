@@ -1,0 +1,47 @@
+{
+  "name": "TriviaQuestion",
+  "type": "object",
+  "properties": {
+    "question": {
+      "type": "string"
+    },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "correct_answer": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "mcu",
+        "comics",
+        "characters",
+        "history"
+      ]
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "casual",
+        "hardcore"
+      ]
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "image_url": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "question",
+    "options",
+    "correct_answer",
+    "category",
+    "difficulty"
+  ]
+}

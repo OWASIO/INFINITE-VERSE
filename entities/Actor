@@ -1,0 +1,37 @@
+{
+  "name": "Actor",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "photo_url": {
+      "type": "string"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "birthdate": {
+      "type": "string",
+      "format": "date"
+    },
+    "birthplace": {
+      "type": "string"
+    },
+    "character_id": {
+      "type": "string"
+    },
+    "notable_roles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "social_links": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "name"
+  ]
+}

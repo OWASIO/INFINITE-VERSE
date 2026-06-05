@@ -1,0 +1,35 @@
+{
+  "name": "QuizSession",
+  "type": "object",
+  "properties": {
+    "user_id": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string"
+    },
+    "difficulty": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number"
+    },
+    "total_questions": {
+      "type": "number"
+    },
+    "percentage": {
+      "type": "number"
+    },
+    "badge_earned": {
+      "type": "string"
+    },
+    "time_taken_seconds": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "user_id",
+    "score",
+    "total_questions"
+  ]
+}
